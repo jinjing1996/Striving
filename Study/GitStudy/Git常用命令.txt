@@ -1,0 +1,17 @@
+1、创建本地仓库 
+git init //观察发现，当前目录增加.git目录
+2、把文件添加到暂存区
+git add file
+git add dir/*
+git status //查看文件状态
+3、若误提交，删除暂存区文件
+git rm --cache file
+4、将暂存区文件提交到工作区
+git commit -m "注释"
+5、添加远程仓库（远程仓库需要先创建）
+git remote add origin 远程仓库地址 //将当前仓库与远程仓库关联，且远程仓库alias为origin
+git remote //查看本地仓库关联的远程仓库
+6、将本项目推送到远程仓库
+git push origin localbranch
+7.git查看远程仓库地址命令
+git remote -v
